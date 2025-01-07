@@ -1,0 +1,50 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="My Portfolio" class="bg-indigo-600 text-white" />
+    
+    <ScrollView>
+        <StackLayout class="p-4 space-y-6">
+            <!-- Hero Section -->
+            <StackLayout class="text-center p-4 bg-indigo-50 rounded-lg">
+                <Label text="John Doe" class="text-3xl font-bold text-indigo-600 mb-2" />
+                <Label text="Mobile Developer" class="text-xl text-gray-600" />
+                <Label text="Creating beautiful mobile experiences" class="text-gray-500 mt-2" textWrap="true" />
+            </StackLayout>
+
+            <!-- Skills Section -->
+            <StackLayout class="bg-white p-4 rounded-lg shadow">
+                <Label text="Skills" class="text-2xl font-bold text-indigo-600 mb-4" />
+                <WrapLayout class="space-x-2 space-y-2">
+                    <Label text="iOS" class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full" />
+                    <Label text="Android" class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full" />
+                    <Label text="React Native" class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full" />
+                    <Label text="NativeScript" class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full" />
+                </WrapLayout>
+            </StackLayout>
+
+            <!-- Projects Section -->
+            <StackLayout class="bg-white p-4 rounded-lg shadow">
+                <Label text="Projects" class="text-2xl font-bold text-indigo-600 mb-4" />
+                
+                <!-- Project 1 -->
+                <StackLayout class="mb-4 bg-gray-50 p-3 rounded">
+                    <Label text="Fitness App" class="text-xl font-bold text-gray-800" />
+                    <Label text="A comprehensive fitness tracking application" class="text-gray-600" textWrap="true" />
+                </StackLayout>
+
+                <!-- Project 2 -->
+                <StackLayout class="mb-4 bg-gray-50 p-3 rounded">
+                    <Label text="E-commerce App" class="text-xl font-bold text-gray-800" />
+                    <Label text="Mobile shopping experience with real-time inventory" class="text-gray-600" textWrap="true" />
+                </StackLayout>
+            </StackLayout>
+
+            <!-- Contact Section -->
+            <StackLayout class="bg-white p-4 rounded-lg shadow">
+                <Label text="Contact" class="text-2xl font-bold text-indigo-600 mb-4" />
+                <Button text="Email Me" tap="{{ onEmailTap }}" class="bg-indigo-600 text-white py-3 rounded-lg" />
+                <Button text="View GitHub" tap="{{ onGitHubTap }}" class="bg-gray-800 text-white py-3 rounded-lg mt-2" />
+                <Button text="LinkedIn Profile" tap="{{ onLinkedInTap }}" class="bg-blue-600 text-white py-3 rounded-lg mt-2" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>
